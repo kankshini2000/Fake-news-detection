@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html >
+<!--From https://codepen.io/frytyler/pen/EGdtg-->
+<head>
+  <meta charset="UTF-8">
+  <title>Fake News 📰 Detection</title>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="login">
+        <h1>Predict Fake News</h1>
+    <form action="{{ url_for('predict')}}"method="post">
+        <textarea  name="message" rows="6" cols="50" required="required" style="font-size: 18pt"></textarea>
+        <br> </br>
+        <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+        <script>
+            function cond(){
+                if(prediction == ['0']%){
+                    <h2 style ="color:red;">THIS IS FAKE NEWS!!Looking Spam⚠️News📰></h2>
+                }
+                else{
+                    <h2 style="color:green;"><b>THIS IS REAL NEWS!!Looking Real News📰</b></h2>
+                }
+            }
+        </script>   
+    </form>
+
+    <br>
+    <br>
+
+    </div>
+</body>
+
+<script>
+    
+</script>
+</html>
